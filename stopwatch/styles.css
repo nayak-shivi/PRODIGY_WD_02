@@ -1,0 +1,81 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('watch.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 320px; /* Adjust width as needed */
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #display {
+    font-size: 48px;
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .buttons {
+    margin-bottom: 20px;
+  }
+  
+  .buttons button {
+    margin: 5px;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: #ddd;
+  }
+  
+  #start { background-color: #4CAF50; color: white; }
+  #stop { background-color: #f44336; color: white; }
+  #togglePausePlay { background-color: #FFD700; color: black; } /* Button color for toggle */
+  #togglePausePlay:hover { background-color: #FFEA80; } /* Hover state */
+  #reset { background-color: #008CBA; color: white; }
+  #lap { background-color: #e7e7e7; color: black; }
+  
+  #laps {
+    max-height: 200px; /* Limit height for lap list */
+    overflow-y: auto; /* Enable scroll if needed */
+    margin-top: 20px;
+    padding: 0;
+  }
+  
+  #laps li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 400px) {
+    .container {
+      width: 280px; /* Adjust for smaller screens */
+    }
+  }
+  
+  
